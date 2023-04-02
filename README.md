@@ -73,3 +73,33 @@ y <- "192.168.0.1"
 str_split_one(y, pattern = stringr::fixed("."))
 #> [1] "192" "168" "0"   "1"
 ```
+
+We additionally have a function called my_add, added as part of part two of Individual Assignment 5.
+
+Description:
+Adds two numeric values together, with an optional default value for y.
+
+Usage:
+``` r
+my_add(x, y = 10)
+my_add(10)
+#> [1] 20
+```
+
+Arguments:
+- x: numeric value to be added
+- y: numeric value to be added with x. Defaults to 10 if not provided.
+
+Value:
+The result of adding x and y.
+
+Note:
+- If either x or y is NA, the function returns NA.
+- If either x or y is non-numeric, the function throws an error with the message "One of your inputs contains a string value".
+
+Examples (This documentation is adapted from the Assignment 5 assignment guidelines from UBC DSCI 310):
+my_add(1, 2)          # output: 3
+my_add(1)             # output: 11
+my_add(NA)            # output: NA
+my_add(10, NA)        # output: NA
+my_add("10", "20")    # throws an error with the message "One of your inputs contains a string value"
