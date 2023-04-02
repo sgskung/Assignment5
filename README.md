@@ -98,8 +98,10 @@ Note:
 - If either x or y is non-numeric, the function throws an error with the message "One of your inputs contains a string value".
 
 Examples (This documentation is adapted from the Assignment 5 assignment guidelines from UBC DSCI 310):
+``` r
 my_add(1, 2)          # output: 3
 my_add(1)             # output: 11
 my_add(NA)            # output: NA
 my_add(10, NA)        # output: NA
 my_add("10", "20")    # throws an error with the message "One of your inputs contains a string value"
+```
